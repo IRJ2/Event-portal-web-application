@@ -81,7 +81,8 @@ form {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
+    box-shadow: 0px 5px 10px grey
   }
   
   li {
@@ -90,17 +91,17 @@ form {
   
   li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #c3f1fa;
   }
   
   .active {
-    background-color: #04AA6D;
+    background-color: #10a8c7;
   }
   /* style for home nav bar end here */
