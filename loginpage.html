@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event portal</title>
+    <link rel="stylesheet" href="/css/userstyle.css">
 </head>
 <header>
     <div>
@@ -12,16 +13,23 @@
     </div>
 </header>
 <body>
+    <div class="loginbox">
     <!-- form for login details start here -->
     <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" alt="Avatar" class="avatar">
+        </div>
+      
         <div class="container">
           <label for="uname"><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" required>
+      
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required>
+      
           <button type="submit">Login</button>
         </div>
-      </form>
+    </div>
       <!-- form for login details end here -->
 </body>
 </html>
