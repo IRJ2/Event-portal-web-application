@@ -1,3 +1,4 @@
+/* style for login page start here */
 /* Bordered form */
 form {
   border: 3px solid #f1f1f1;
@@ -75,34 +76,72 @@ span.psw {
     width: 100%;
   }
 }
+/* style for login page end here */
 /* style for home nav bar start here */
+* {box-sizing: border-box;}
 
-ul {
-  list-style-type: none;
+body { 
   margin: 0;
-  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
   overflow: hidden;
-  background-color: white;
-  box-shadow: 0px 5px 10px grey;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
 }
+.header {
+    overflow: hidden;
+    background-color: white;
+    /* #f1f1f1; */
+    padding: 20px 10px;
+    box-shadow: 0px -10px 50px grey;
+  }
+  
+  .header a ,img{
+    float: left;
+    color: black;
+    text-align: center;
+    vertical-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    max-width: 300px;
 
-li {
-  float: left;
+  }
+.header img{
+    max-height: 200px;
+
 }
-
-li a {
-  display: block;
+.logoimg a:hover{
+  background-color: transparent;
+}
+.header-right a:hover {
+  background-color: #dbd9d5;
   color: black;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #c3f1fa;
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
 }
 
-.active {
-  background-color: #10a8c7;
+.header-right {
+  float: right;
+  display: inline;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
 }
 /* style for home nav bar end here */
