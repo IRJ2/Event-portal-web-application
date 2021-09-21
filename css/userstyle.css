@@ -98,7 +98,7 @@ body {
     box-shadow: 0px -10px 50px grey;
   }
   
-  .header a ,img{
+  .header a ,#logo{
     float: left;
     color: black;
     text-align: center;
@@ -111,7 +111,7 @@ body {
     max-width: 300px;
 
   }
-.header img{
+.header #logo{
     max-height: 200px;
 
 }
@@ -203,3 +203,25 @@ height:290px;
 }
 
 /* style for eventdetails end here */
+
+/* style for eventlist start here */
+.titleblock{
+  position: relative;
+  text-align: center;
+  color: black;
+  
+}
+.titleblock #titleimg{
+  width: 100%;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title #title{
+  text-transform: capitalize;
+  color: #4a4843;
+}
+/* style for eventlist end here */
