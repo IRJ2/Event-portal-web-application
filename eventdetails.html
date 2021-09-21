@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/css/userstyle.css" />
+    <link rel="stylesheet" type="text/css" href="/css/userstyle.css">
     <style>
       .b {
         background-color: DarkBlue;
@@ -12,6 +12,9 @@
         margin: 2px 3px;
         cursor: pointer;
       }
+table, td {
+  border:0;
+}
     </style>
   </head>
   <body>
@@ -34,14 +37,38 @@
       <div id="content2">
         <div id="right">
           <h2 style="text-align: center">Event Overview</h2>
-          <ul class="a">
-            <li>Start date:&emsp; 22 September 2021</li>
-            <li>End date:&emsp; 22 September 2021</li>
-            <li>Start time:&emsp; 7:00 pm</li>
-            <li>End date:&emsp; 9:00 pm</li>
-            <li>Register close date:&ensp; 21 September 2021</li>
-            <li>Register close time:&ensp; 10:00 pm</li>
-          </ul>
+	  <table>
+		<tr>
+			<td>Start date</td>
+			<td>:</td>
+			<td>22 September 2021</td>
+		</tr>
+		<tr>
+			<td>End date</td>
+			<td>:</td>
+			<td>22 September 2021</td>
+		</tr>
+		<tr>
+			<td>Start time</td>
+			<td>:</td>
+			<td>7:00 pm</td>
+		</tr>
+		<tr>
+			<td>End date</td>
+			<td>:</td>
+			<td>9:00 pm</td>
+		</tr>
+		<tr>
+			<td>Register close date</td>
+			<td>:</td>
+			<td>21 September 2021</td>
+		</tr>
+		<tr>
+			<td>Register close time</td>
+			<td>:</td>
+			<td>10:00 pm</td>
+                </tr>
+	  </table>
           <button class="b">Register</button>
         </div>
       </div>
