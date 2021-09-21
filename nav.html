@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-</style>
-</head>
-<body>
-
-<ul>
-<li><a href="#event">Event Portal</a></li>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#create">Create</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a class="active" href="#about">About</a></li>
-  <li><a href="#logout">Logout</a></li>
-</ul>
-
-</body>
-</html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/userstyle.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <div class="header">
+      <a class="logoimg" href="#">
+        <img id="logo" src="/images/logo.png" alt="company logo" />
+      </a>
+      <div class="header-right">
+        <a class="active" href="#home">Home</a>
+        <a href="#">Create</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/about.html">About</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+    <!-- header end -->
+    <!-- title start-->
+    <div class="titleblock">
+      <img
+        id="titleimg"
+        src="/images/themeblock.PNG"
+        alt="white pattern "
+        style="width: 100%"
+      />
+      <div class="title">
+        <p style="font-size: 50px" id="title">Get your event</p>
+        <div class="row">
+          <!-- form -->
+          <form action="#" class="search-box">
+            <div class="input-form">
+              <input
+                id="search-event"
+                type="text"
+                placeholder="Event Title or keyword"
+              />
+            </div>
+            <div class="search-form">
+              <a id="find-e" href="#">Find Event</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- title end -->
+    </body>
+    </html>
