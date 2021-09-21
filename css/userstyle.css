@@ -10,6 +10,8 @@ body {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
+  
+  
 }
 .header {
     overflow: hidden;
@@ -30,11 +32,10 @@ body {
     line-height: 25px;
     border-radius: 4px;
     max-width: 300px;
-
+    
   }
 .header #logo{
     max-height: 200px;
-
 }
 .logoimg a:hover{
   background-color: transparent;
@@ -52,6 +53,7 @@ body {
 .header-right {
   float: right;
   display: inline;
+  
 }
 
 @media screen and (max-width: 500px) {
@@ -187,7 +189,62 @@ height:290px;
     box-sizing: border-box;
     text-decoration: none;
 }
-
+/* event-box start here */
+.event-box{
+  padding: 0%;
+  margin: 0%;
+  margin-top: 30px;
+  margin-left: 100px;
+  background-color: white;
+  /* border-color: #a8aaad; */
+  border-color: transparent;
+  border-radius: 30px;
+}
+.event-box:hover{
+  box-shadow: 0px 0px 5px grey;
+  transition: 0.5s;
+}
+p.pd{
+  text-align: right;
+  font-size: 20px;
+  color: #a8aaad;
+}
+img.pin{
+  max-width: 50px;
+}
+p.ev-title{
+  text-align: left;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.det-button{
+  background-color: dodgerblue;
+  color: white;
+  font-size: 20px;
+  border-color: transparent;
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.det-button:hover{
+  background-color: white;
+  color: dodgerblue;
+  font-size: 20px;
+  border-color: dodgerblue;
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+/* event-box end here */
+.footer-{
+  background-color: dodgerblue;
+  color: white;
+  font-size: 10px;
+  
+}
 /* style for eventlist end here */
 
 /*style for about start here */
