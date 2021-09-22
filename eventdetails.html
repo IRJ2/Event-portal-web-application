@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/css/userstyle.css">
+    <link rel="stylesheet" type="text/css" href="/css/userstyle.css" />
     <style>
       .b {
         background-color: DarkBlue;
@@ -12,19 +12,45 @@
         margin: 2px 3px;
         cursor: pointer;
       }
-table, td {
-  border:0;
-}
+      table,
+      td {
+        border: 0;
+      }
     </style>
   </head>
   <body>
-    <div id="container">
-      <div id="head">
-        <h1>Programmer</h1>
+    <!-- header start -->
+    <div class="header">
+      <a class="logoimg" href="#">
+        <img id="logo" src="/images/logo.png" alt="company logo" />
+      </a>
+      <div class="header-right">
+        <a class="active" href="/eventlist.html">Home</a>
+        <a href="#">Create</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/about.html">About</a>
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
       </div>
+    </div>
+    <!-- header end -->
+    <!-- title start-->
+    <div class="titleblock">
+      <img
+        id="titleimg"
+        src="/images/themeblock.PNG"
+        alt="white pattern "
+        style="width: 100%"
+      />
+      <div class="title">
+        <p style="font-size: 50px" class="title-text" id="title">Event title</p>
+      </div>
+    </div>
+    <!-- title end -->
+    <div class="container-ed">
       <div id="content1">
         <div id="left">
-          <h2 class="h1">Event Description</h2>
+          <p class="h1">Event Description</p>
           <p class="p1">
             This event test your skills on programming. You just need a basic
             idea about C++, Java and Python programming languages. The
@@ -36,42 +62,50 @@ table, td {
       </div>
       <div id="content2">
         <div id="right">
-          <h2 style="text-align: center">Event Overview</h2>
-	  <table>
-		<tr>
-			<td>Start date</td>
-			<td>:</td>
-			<td>22 September 2021</td>
-		</tr>
-		<tr>
-			<td>End date</td>
-			<td>:</td>
-			<td>22 September 2021</td>
-		</tr>
-		<tr>
-			<td>Start time</td>
-			<td>:</td>
-			<td>7:00 pm</td>
-		</tr>
-		<tr>
-			<td>End date</td>
-			<td>:</td>
-			<td>9:00 pm</td>
-		</tr>
-		<tr>
-			<td>Register close date</td>
-			<td>:</td>
-			<td>21 September 2021</td>
-		</tr>
-		<tr>
-			<td>Register close time</td>
-			<td>:</td>
-			<td>10:00 pm</td>
-                </tr>
-	  </table>
-          <button class="b">Register</button>
+          <p class="e-overview" style="text-align: center">Event Overview</p>
+          <table>
+            <tr>
+              <td><p class="e-ov-text">Start date</p></td>
+              <td><p class="e-ov-text">:</p></td>
+              <td><p class="e-ov-text">22 September 2021</p></td>
+            </tr>
+            <tr>
+              <td><p class="e-ov-text">End date</p></td>
+              <td><p class="e-ov-text">:</p></td>
+              <td><p class="e-ov-text">22 September 2021</p></td>
+            </tr>
+            <tr>
+              <td><p class="e-ov-text">Start time</p></td>
+              <td><p class="e-ov-text">:</p></td>
+              <td><p class="e-ov-text">7:00 pm</p></td>
+            </tr>
+            <tr>
+              <td><p class="e-ov-text">End date</p></td>
+              <td><p class="e-ov-text">:</p></td>
+              <td><p class="e-ov-text">9:00 pm</p></td>
+            </tr>
+            <tr>
+              <td><p class="e-ov-text">Register close date</p></td>
+              <td><p class="e-ov-text">:</p></td>
+              <td><p class="e-ov-text">21 September 2021</p></td>
+            </tr>
+            <tr>
+              <td><p class="e-ov-text">Register close time</p></td>
+              <td><p class="e-ov-text">:</p></td>
+              <td><p class="e-ov-text">10:00 pm</p></td>
+            </tr>
+          </table>
+          <form  action="" method="post">
+            <input class="reg-event" type="button" value="Register Now">
+          </form>
         </div>
       </div>
     </div>
   </body>
+  <footer >
+    <div class="footer-">
+      <p>Authors: Irene , Deekshita , Dileep , Abhinav</p>
+      <p><a href="#">eventima@team6.com</a></p>
+    </div>
+  </footer>
 </html>
