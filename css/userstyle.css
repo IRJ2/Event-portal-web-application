@@ -255,16 +255,25 @@ p.ev-title{
 /* style for eventlist end here */
 
 /*style for about start here */
-#container1{
+#container1-about{
 padding-top:84px;
-float:left;
-width:600px;
+width:80%;
+margin-left: 200px;
 font-size:20px;
 padding-left:25px;
+margin-bottom: 100px;
 }
-#image{
-padding-top:130px;
-padding-right:240px;
+.about-img{
+  float: right;
+  height: inherit;
+  margin-left: 30px;
+}
+.about-content{
+  text-indent: 50px;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  line-height: 2;
 }
 
 /*style for about end here */
@@ -302,13 +311,7 @@ position:absolute;
 
 /*style for profile start here */
 
-/* body{
-background-color:lightgrey;
-} */
 #contain1{
-/* float:right; */
-/* padding-right:100px;
-padding-top:140px; */
 margin-left: 30%;
 }
 .bord{
