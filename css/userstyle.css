@@ -275,36 +275,10 @@ margin-bottom: 100px;
 /*style for about end here */
 
 /*style for contact start here */
-#head1{
-text-align:center;
-padding:150px;
-}
-#content1{
-width:150px;
-top:470px;
-left:300px;
-padding:1px;
-font-size:20px;
-position:absolute;
-}
-#content2{
-width:150px;
-top:500px;
-left:600px;
-padding:1px;
-font-size:20px;
-position:absolute;
-}
-#content3{
-width:150px;
-top:500px;
-left:880px;
-padding:1px;
-font-size:20px;
-position:absolute;
+#contactus{
+padding-left:400px;
 }
 /*style for contact end here */
-
 /*style for profile start here */
 
 #contain1{
