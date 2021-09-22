@@ -70,57 +70,65 @@ body {
 /* style for home nav bar end here */
 
 /* style for eventdetails start here */
-body{
-	background-color: white;
-	
-}
-#container{
-	padding-top:50px;
-	width: device;
+.container-ed {
 	margin-left: auto;
 	margin-right: auto;
 }
-#content1{
-padding-top:100px;
-padding-left:20px;
-}
 #content2{
 padding-right:30px;
-
-}
-#h1
-{
-font-family: Arial, Helvetica, sans-serif;
-}
-#p1{
-font-family: Arial, Helvetica, sans-serif;
-}
-#head{
-	border-radius:2px;
-	border-style:outset;
-	text-align: center;
-	font-size:28px;
-	text-color:grey;
+margin-top: 80px;
+margin-left: 200px;
 }
 #left{
 	padding: 10px;
-	border:1px;
-	border-style:outset;
-	float:left;	
-	text-color:grey;
+	/* float:left;	 */
+  text-align: justify;
 	width:600px;
-	
+  margin: 0;
+  margin-left: -200px;
 }
 #right{
-padding: 5px;
+padding: 30px;
 font-size:17px;
-border:1px;
-border-style:double;
-width:300px;
-float:right;
-height:290px;
+border: 1px;
+width: 400px;
+border-style:solid;
+border-color: #d2d4d2;
+border-radius: 10px;
+/* float:right; */
+margin-right: -450px;
 }
-
+input.reg-event{
+  margin-top: 25px;
+  background-color: dodgerblue;
+  padding: 20px;
+  color: white;
+  border-color: transparent;
+  border-radius: 30px;
+  font-size: 20px;
+}
+input.reg-event:hover{
+  border-color: dodgerblue;
+  color: dodgerblue;
+  background-color: white;
+  transition: .7s;
+}
+.e-overview{
+  font-size: 25px;
+  font-weight: 500;
+}
+.p1{
+  text-indent: 50px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.h1{
+  font-size: 50px;
+}
+.e-ov-text{
+  display: inline;
+  line-height: 1.5;
+}
 /* style for eventdetails end here */
 
 /* style for eventlist start here */
@@ -139,7 +147,7 @@ height:290px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.title #title{
+.title .title-text {
   text-transform: capitalize;
   color: #4a4843;
 }
@@ -236,10 +244,13 @@ p.ev-title{
 }
 /* event-box end here */
 .footer-{
+  margin: 0;
+  position: relative;
   background-color: dodgerblue;
   color: white;
   font-size: 10px;
-  
+  bottom:0;
+  width: 100%;
 }
 /* style for eventlist end here */
 
