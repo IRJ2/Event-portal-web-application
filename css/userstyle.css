@@ -70,10 +70,6 @@ body {
 /* style for home nav bar end here */
 
 /* style for eventdetails start here */
-.container-ed {
-	margin-left: auto;
-	margin-right: auto;
-}
 #content2{
 padding-right:30px;
 margin-top: 80px;
@@ -81,11 +77,10 @@ margin-left: 200px;
 }
 #left{
 	padding: 10px;
-	/* float:left;	 */
   text-align: justify;
-	width:600px;
-  margin: 0;
-  margin-left: -200px;
+  width: 90%;
+  min-height: 700px;
+  margin-left: 40px;
 }
 #right{
 padding: 30px;
@@ -95,8 +90,8 @@ width: 400px;
 border-style:solid;
 border-color: #d2d4d2;
 border-radius: 10px;
-/* float:right; */
-margin-right: -450px;
+margin-left: 30px;
+float:right;
 }
 input.reg-event{
   margin-top: 25px;
@@ -121,9 +116,10 @@ input.reg-event:hover{
   text-indent: 50px;
   letter-spacing: 2px;
   line-height: 1.5;
+  font-size: 20px;
 }
 .h1{
-  font-size: 50px;
+  font-size: 25px;
 }
 .e-ov-text{
   display: inline;
