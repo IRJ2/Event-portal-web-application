@@ -106,7 +106,7 @@ input.reg-event:hover{
   border-color: dodgerblue;
   color: dodgerblue;
   background-color: white;
-  transition: .7s;
+  transition: .3s;
 }
 .e-overview{
   font-size: 25px;
