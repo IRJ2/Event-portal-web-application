@@ -1,11 +1,13 @@
 /* style for login page start here */
 /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+    border: 1px solid #ddd8d8;
     width: 300px;
+    border-radius: 10px;
     margin: 5px auto;
+    margin-top: 150px;
   }
-  
+
   /* Full-width inputs */
   input[type="text"],
   input[type="password"] {
@@ -13,19 +15,24 @@ form {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid rgb(102, 85, 85);
+    border-radius: 10px;
+    border: 1px solid rgb(129, 129, 129);
     box-sizing: border-box;
+    border-color: rgb(153, 153, 153);
+    font-size: 15px;
   }
   
   /* Set a style for all buttons */
   button {
-    background-color: #04aa6d;
+    background-color: dodgerblue;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
+    font-size: 15px;
     cursor: pointer;
     width: 100%;
+    border-radius: 10px;
   }
   
   /* Add a hover effect for buttons */
@@ -47,6 +54,7 @@ form {
     max-width: 75%;
     margin: 5px auto;
     height: auto;
+    margin-top: 20px;
   }
   
   /* Avatar image */
@@ -54,7 +62,7 @@ form {
     width: 40%;
     border-radius: 50%;
   }
-  
+
   /* Add padding to containers */
   .container {
     padding: 16px;
@@ -65,7 +73,10 @@ form {
     float: right;
     padding-top: 16px;
   }
-  
+  label{
+    font-family: sans-serif;
+    
+  }
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
