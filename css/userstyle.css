@@ -106,7 +106,7 @@ input.reg-event:hover{
   border-color: dodgerblue;
   color: dodgerblue;
   background-color: white;
-  transition: .7s;
+  transition: .3s;
 }
 .e-overview{
   font-size: 25px;
@@ -148,7 +148,7 @@ input.reg-event:hover{
   color: #4a4843;
 }
 .row  {
-  float: left;
+  /* float: left; */
     color: black;
     text-align: center;
     vertical-align: center;
@@ -158,6 +158,8 @@ input.reg-event:hover{
     line-height: 25px;
     border-radius: 4px;
     max-width: 300px;
+    margin-left: -375px;
+    margin-top: -60px;
     
 }
 .search-box {
@@ -170,6 +172,7 @@ input.reg-event:hover{
 	}
 #search-event{
   width: 80%;
+  font-size: 15px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -236,7 +239,7 @@ p.ev-title{
   height: 50px;
   margin-left: 20px;
   border-radius: 10px;
-  transition: 0.7s;
+  transition: 0.3s;
 }
 /* event-box end here */
 .footer-{
