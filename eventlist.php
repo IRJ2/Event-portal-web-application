@@ -1,62 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/userstyle.css" />
-    <script
-      src="https://kit.fontawesome.com/80858aacba.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- header start -->
-    <div class="header">
-      <a class="logoimg" href="#">
-        <img id="logo" src="/images/logo.png" alt="company logo" />
-      </a>
-      <div class="header-right">
-        <a class="active" href="/eventlist.html">Home</a>
-        <a href="/createevent.html">Create</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/about.html">About</a>
-        <a href="/studentprofile.html">Profile</a>
-        <a href="loginpage.html">Logout</a>
-      </div>
-    </div>
-    <!-- header end -->
-    <!-- title start-->
-    <div class="titleblock">
-      <img
-        id="titleimg"
-        src="/images/themeblock.PNG"
-        alt="white pattern "
-        style="width: 100%"
-      />
-      <div class="title">
-        <p style="font-size: 50px" class="title-text" id="title">Get your event</p>
-        <div class="row">
-          <!-- form -->
-          <form action="#" class="search-box">
-            <div class="input-form">
-              <input
-                id="search-event"
-                type="text"
-                placeholder="Event Title or keyword"
-              />
-            </div>
-            <div class="search-form">
-              <a id="find-e" href="#">Find Event</a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- title end -->
+<?php
+
+session_start();
+ 
+// Check if the user is logged in or not
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: loginpage.php");
+    exit;
+}
+?>
+<?php
+  include_once "php/header.inc.php";
+?>
     <!-- event list start -->
     <table class="event-box" style="width: 80%">
       <tr>
         <th rowspan="3">
-          <img class="pin" src="/images/pin.PNG" alt="Blue pin" />
+          <img class="pin" src="http://localhost/Event-portal-web-application/images/pin.PNG" alt="Blue pin" />
         </th>
         <th>
           <p class="ev-title">30 days of google cloud program</p>
@@ -89,7 +48,7 @@
     <table class="event-box" style="width: 80%">
       <tr>
         <th rowspan="3">
-          <img class="pin" src="/images/pin.PNG" alt="Blue pin" />
+          <img class="pin" src="http://localhost/Event-portal-web-application/images/pin.PNG" alt="Blue pin" />
         </th>
         <th>
           <p class="ev-title">30 days of google cloud program</p>
@@ -119,10 +78,6 @@
     </table>
     <!-- event list end -->
   </body>
-  <footer>
-    <div class="footer-">
-      <p>Authors: Irene , Deekshita , Dileep , Abhinav</p>
-      <p><a href="#">eventima@team6.com</a></p>
-    </div>
-  </footer>
-</html>
+  <?php
+  include_once 'php/footer.inc.php';
+  ?>
