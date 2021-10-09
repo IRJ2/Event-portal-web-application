@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/css/userstyle.css">
+    <link rel="stylesheet" href="http://localhost/Event-portal-web-application/css/userstyle.css">
 	<style>
 		table,td{
 		border:0;
@@ -13,11 +13,12 @@
     <!-- header start -->
     <div class="header">
       <a class="logoimg" href="#">
-        <img id="logo" src="/images/logo.png" alt="company logo" />
+        <img id="logo" src="http://localhost/Event-portal-web-application/images/logo.png" alt="company logo" />
       </a>
       <div class="header-right">
         <a class="active" href="/eventlist.html">Home</a>
         <a href="/createevent.html">Create</a>
+	<a href="/myevent.html">My Event</a>
         <a href="/contact.html">Contact</a>
         <a href="/about.html">About</a>
         <a href="/studentprofile.html">Profile</a>
@@ -29,7 +30,7 @@
     <div class="titleblock">
       <img
         id="titleimg"
-        src="/images/themeblock.png"
+        src="http://localhost/Event-portal-web-application/images/themeblock.png"
         alt="white pattern "
         style="width: 100%"
       />
@@ -43,50 +44,50 @@
 <div id="contain4" style="margin-left:auto;margin-right:auto;width:700px;">
 <div align="center">
 <div class="bord3">
-<form method = "get">
+<form action="create.php" method = "post">
     <table>
      <tr>
       <td><p><label>Event Title</label></td>
       <td>:</td>
-      <td><p><input class="ip-create" type ="text"/></p></td>
+      <td><p><input class="ip-create" type ="text" name="title" /></p></td>
      </tr>
      <tr>
       <td><p><label>Event Details</label></td>
       <td>:</td>
-      <td><p><textarea  class="ip-create" cols="40" rows="7" value="details"></textarea></p></td>
+      <td><p><textarea  class="ip-create" cols="40" rows="7" value="details" name="details"></textarea></p></td>
      </tr>
      <tr>
-      <td><p><label>Enter Registration start date</label></td>
+      <td><p><label>Enter Registration close date</label></td>
       <td>:</td>
-      <td><p><input class="ip-create" type ="date"/></p></td>
+      <td><p><input class="ip-create" type ="date" name="reg_close_date"/></p></td>
      </tr>
      <tr>
       <td><p><label>Enter Registration close time</label></td>
       <td>:</td>
-      <td><p><input class="ip-create" type ="time"/></p></td>
+      <td><p><input class="ip-create" type ="time" name="reg_close_time"/></p></td>
      </tr>
      <tr>
       <td><p><label>Enter event start date</label></td>
       <td>:</td>
-      <td><p><input class="ip-create" type ="date"/></p></td>
+      <td><p><input class="ip-create" type ="date" name="start_date"/></p></td>
      </tr>
      <tr>
       <td><p><label>Enter event end date</label></td>
       <td>:</td>
-      <td><p><input class="ip-create" type ="date"/></p></td>
+      <td><p><input class="ip-create" type ="date" name="end_date"/></p></td>
      </tr>
      <tr>
       <td><p><label>Enter event start time</label></td>
       <td>:</td>
-      <td><p><input class="ip-create" type ="time"/></p></td>
+      <td><p><input class="ip-create" type ="time" name="start_time"/></p></td>
      </tr>
      <tr>
       <td><p><label>Enter event end time</label></td>
       <td>:</td>
-      <td><p><input class="ip-create" type ="time"/></p></td>
+      <td><p><input class="ip-create" type ="time" name="end_time"/></p></td>
      </tr>
 </table>
-      <input id="submit-e" type = "submit"  value="Submit" style="height:45px; width:80px"/>
+      <input id="submit-e" type = "submit"  value="Submit" name='btn-signup' style="height:45px; width:80px"/>
       <input id="reset-e" type = "reset" value="Reset" style="height:45px; width:80px"/>
     </form>
 </div>

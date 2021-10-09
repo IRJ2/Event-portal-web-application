@@ -1,11 +1,22 @@
+<?php
+
+session_start();
+ 
+// Check if the user is logged in or not
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: loginpage.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="/css/userstyle.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/Event-portal-web-application/css/userstyle.css">
     <style>
 	table,td{
 		border:0;
+		width:650px;
 	}
 	</style>
   </head>
@@ -13,11 +24,12 @@
     <!-- header start -->
     <div class="header">
       <a class="logoimg" href="#">
-        <img id="logo" src="/images/logo.png" alt="company logo" />
+        <img id="logo" src="http://localhost/Event-portal-web-application/images/logo.png" alt="company logo" />
       </a>
       <div class="header-right">
         <a class="active" href="/eventlist.html">Home</a>
         <a href="/createevent.html">Create</a>
+	<a href="/myevent.html">My Event</a>
         <a href="/contact.html">Contact</a>
         <a href="/about.html">About</a>
         <a href="/studentprofile.html">Profile</a>
@@ -29,7 +41,7 @@
     <div class="titleblock">
       <img
         id="titleimg"
-        src="/images/themeblock.png"
+        src="http://localhost/Event-portal-web-application/images/themeblock.png"
         alt="white pattern "
         style="width: 100%"
       />
@@ -40,17 +52,27 @@
     </div>
     <!-- title end -->
 <div id="contactus">
-	<table style="width:650px;">
+		<table style="width:650px;">
 	    <tr>
-		<td><img src="/images/location.jpg" width="200px" height="150px"></td>
-		<td><img src="/images/phone.jpg" width="50px" height="50px"></td>
-		<td><img src="/images/mail.jpg" width="80px" height="80px"></td>
+		<td><img src="http://localhost/Event-portal-web-application/images/location.jpg" width="200px" height="150px"></td>
+		<td><img src="http://localhost/Event-portal-web-application/images/phone.jpg" width="50px" height="50px"></td>
+		<td><img src="http://localhost/Event-portal-web-application/images/mail.jpg" width="80px" height="80px"></td>
 	    </tr>
-	    <tr><td><p>AshBridge,London,UK</p></td>
-		<td><p>07689231232</p><p>08956723445</p></td>
-    <td><p>contact@gmail.com</p></td>
-	    </tr>
-	</table>
+		<?php
+		require_once "connect.php";
+
+		$result = mysqli_query($link,"SELECT * FROM admin");
+		while($row = mysqli_fetch_array($result))
+		 {
+		  echo "<tr>";
+		  echo "<td>" . $row['a_location'] . "</td>";
+		  echo "<td>" . $row['a_phone'] . "</td>";
+		  echo "<td>" . $row['a_email'] . "</td>";
+		  echo "</tr>";
+		  }
+		echo "</table>";
+               mysqli_close($link);
+              ?>	  
 </div>
     </body>
     <footer>
