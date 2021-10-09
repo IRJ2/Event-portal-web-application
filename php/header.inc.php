@@ -17,6 +17,7 @@
       <div class="header-right">
         <a class="active" href="/eventlist.html">Home</a>
         <a href="/createevent.html">Create</a>
+	<a href="/myevent.html">My Event</a>
         <a href="/contact.html">Contact</a>
         <a href="/about.html">About</a>
         <a href="/studentprofile.html">Profile</a>

@@ -1,6 +1,16 @@
+<?php
+
+session_start();
+ 
+// Check if the user is logged in or not
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: loginpage.php");
+    exit;
+}
+?>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/css/userstyle.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/Event-web-portal-application/css/userstyle.css" />
     <script
       src="https://kit.fontawesome.com/80858aacba.js"
       crossorigin="anonymous"
@@ -22,11 +32,12 @@
 	  <!-- header start -->
 	  <div class="header">
 		<a class="logoimg" href="#">
-		  <img id="logo" src="/images/logo.png" alt="company logo" />
+		  <img id="logo" src="http://localhost/Event-web-portal-application/images/logo.png" alt="company logo" />
 		</a>
 		<div class="header-right">
 		  <a class="active" href="/eventlist.html">Home</a>
       <a href="/createevent.html">Create</a>
+	<a href="/myevent.html">My Event</a>
       <a href="/contact.html">Contact</a>
       <a href="/about.html">About</a>
       <a href="/studentprofile.html">Profile</a>
@@ -38,7 +49,7 @@
 	  <div class="titleblock">
 		<img
 		  id="titleimg"
-		  src="/images/themeblock.PNG"
+		  src="http://localhost/Event-web-portal-application/images/themeblock.PNG"
 		  alt="white pattern "
 		  style="width: 100%"
 		/>
@@ -58,32 +69,40 @@
           <i class="far fa-clone"></i> Student Information
         </p>
         <table class="t">
-          <tr>
-            <td><p>Name</p></td>
-            <td><p>:</p></td>
-            <td><p>Rahul Jain</p></td>
-          </tr>
-          <tr>
-            <td><p>PhoneNo</p></td>
-            <td><p>:</p></td>
-            <td><p>9782397814</p></td>
-          </tr>
-          <tr>
-            <td><p>E-mail</p></td>
-            <td><p>:</p></td>
-            <td><p>rahul@gmail.com</p></td>
-          </tr>
-          <tr>
-            <td><p>Branch</p></td>
-            <td><p>:</p></td>
-            <td><p>Information Technology</p></td>
-          </tr>
-          <tr>
-            <td><p>Batch</p></td>
-            <td><p>:</p></td>
-            <td><p>Third Year</p></td>
-          </tr>
-        </table>
+	<?php
+		require_once "connect.php";
+		$id=$_SESSION["id"];
+		$result = mysqli_query($link,"select * from student,phone where student.s_id=phone.s_id and student.s_id=$id");
+		while($row = mysqli_fetch_array($result))
+		 {
+		  echo "<tr>";
+		  echo "<td><p>Name</p></td>";
+		  echo "<td><p>:</p></td>";
+		  echo "<td>" . $row['f_name'] ." ".$row['m_name']." ".$row['l_name']."</td>";
+		  echo "</tr>";
+		  echo "<tr>";
+		  echo "<td><p>Phone</p></td>";
+		  echo "<td><p>:</p></td>";
+		  echo "<td>" . $row['phone_no'] ."</td>";
+		  echo "</tr>";
+		  echo "<tr>";
+		  echo "<td><p>Email</p></td>";
+		  echo "<td><p>:</p></td>";
+		  echo "<td>" . $row['s_email'] ."</td>";
+		  echo "</tr>";
+		  echo "<td><p>Branch</p></td>";
+		  echo "<td><p>:</p></td>";
+		  echo "<td>" . $row['branch'] ."</td>";
+		  echo "</tr>";
+		  echo "<tr>";
+		  echo "<td><p>Batch</p></td>";
+		  echo "<td><p>:</p></td>";
+		  echo "<td>" . $row['batch'] ."</td>";
+		  echo "</tr>";
+                  }
+		echo "</table>";
+               mysqli_close($link);
+              ?>	
       </div>
     </div>
     

@@ -108,6 +108,22 @@ input.reg-event:hover{
   background-color: white;
   transition: .3s;
 }
+input.del-event{
+  margin-top: 25px;
+  background-color: red;
+  padding: 20px;
+  color: white;
+  border-color: transparent;
+  border-radius: 30px;
+  font-size: 20px;
+  width:165px;
+}
+input.del-event:hover{
+  border-color: red;
+  color: red;
+  background-color: white;
+  transition: .3s;
+}
 .e-overview{
   font-size: 25px;
   font-weight: 500;
