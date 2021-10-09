@@ -7,7 +7,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 ?>
 <?php
-require_once "http://localhost/Event-web-portal-application/connect.php";
+require_once "php/connect.php";
+
 $eid=$_SESSION["eid"];
 $sql="delete from event where e_id=$eid";
 if ($link->query($sql) === TRUE) {
