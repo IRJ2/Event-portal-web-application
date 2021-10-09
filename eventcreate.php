@@ -54,7 +54,7 @@
      <tr>
       <td><p><label>Event Details</label></td>
       <td>:</td>
-      <td><p><textarea  class="ip-create" cols="40" rows="7" value="details" name="details"></textarea></p></td>
+      <td><p><textarea  class="ip-create" cols="40" rows="7" value="details" name="details" require></textarea></p></td>
      </tr>
      <tr>
       <td><p><label>Enter Registration close date</label></td>
