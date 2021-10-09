@@ -35,11 +35,8 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
   <!-- title start-->
   <?php
   require_once "php/connect.php";
-  // if($_POST["btn-view"]) 
-  // { 
   $e_id = $_POST['event_id'];
   $result = mysqli_query($link, "select * from event where e_id='$e_id'");
-  // e_id,e_title,start_date,end_date,start_time,end_time,reg_close_date,reg_close_time,details
   while ($row = mysqli_fetch_array($result)) {
   ?>
     <div class="titleblock">
@@ -132,8 +129,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
           </form>
         </table>
       </div>
-      <p class="p1"><?php echo $row["details"];
-                  } ?>
+      <p class="p1"><?php echo $row["details"];} ?>
       </p>
       </p>
     </div>
