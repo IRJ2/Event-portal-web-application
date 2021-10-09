@@ -17,9 +17,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		  <img id="logo" src="http://localhost/Event-web-portal-application/images/logo.png" alt="company logo" />
 		</a>
 		<div class="header-right">
-      <a class="active" href="eventlist.php">Home</a>
+      <a  href="eventlist.php">Home</a>
       <a href="eventcreate.php">Create</a>
-      <a href="event.php">My Event</a>
+      <a class="active" href="event.php">My Event</a>
       <a href="contact.php">Contact</a>
       <a href="about.php">About</a>
       <a href="studentprofile.php">Profile</a>
