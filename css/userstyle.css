@@ -244,7 +244,11 @@ p.ev-title{
   width: 200px;
   height: 50px;
   margin-left: 20px;
+  margin-right: 0px;
   border-radius: 10px;
+}
+td.view-space{
+  max-width: 100px;
 }
 .det-button:hover{
   background-color: white;

@@ -13,7 +13,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="http://localhost/Event-portal-web-application/css/userstyle.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost/Event-web-portal-application/css/userstyle.css">
   <style>
     table,
     td {
