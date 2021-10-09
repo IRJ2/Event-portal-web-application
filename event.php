@@ -13,9 +13,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 </head>
 
 <body>
-
-  
-
 <!-- header start -->
 	  <div class="header">
 		<a class="logoimg" href="#">
@@ -23,7 +20,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 		</a>
 		<div class="header-right">
       <a  href="eventlist.php">Home</a>
-
       <a href="eventcreate.php">Create</a>
       <a class="active" href="event.php">My Event</a>
       <a href="contact.php">Contact</a>
