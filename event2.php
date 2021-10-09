@@ -20,19 +20,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <img id="logo" src="http://localhost/Event-web-portal-application/images/logo.png" alt="company logo" />
       </a>
       <div class="header-right">
-        <a class="active" href="/eventlist.html">Home</a>
-        <a href="/createevent.html">Create</a>
-	<a href="/myevent.html">My Event</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/about.html">About</a>
-        <a href="/studentprofile.php">Profile</a>
-        <a href="/loginpage.html">Logout</a>
+        <a  href="eventlist.php">Home</a>
+        <a href="eventcreate.php">Create</a>
+	<a class="active" href="event.php">My Event</a>
+        <a href="contact.php">Contact</a>
+        <a href="about.php">About</a>
+        <a href="studentprofile.php">Profile</a>
+        <a href="php/logout.inc.php">Logout</a>
       </div>
     </div>
     <!-- header end -->
     <!-- title start-->
     <?php
-    require_once "connect.php";
+    require_once "php/connect.php";
 if($_POST["btn-view"]) 
 { 
 $etit=$_SESSION["etitle"];
