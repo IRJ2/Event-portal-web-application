@@ -1,19 +1,19 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/css/userstyle.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/Event-web-portal-application/css/userstyle.css" />
   </head>
   <body>
     <!-- header start -->
     <div class="header">
       <a class="logoimg" href="#">
-        <img id="logo" src="/images/logo.png" alt="company logo" />
+        <img id="logo" src="http://localhost/Event-web-portal-application/images/logo.png" alt="company logo" />
       </a>
       <div class="header-right">
-      <a class="active" href="eventlist.php">Home</a>
+      <a  href="eventlist.php">Home</a>
       <a href="eventcreate.php">Create</a>
       <a href="event.php">My Event</a>
       <a href="contact.php">Contact</a>
-      <a href="about.php">About</a>
+      <a class="active" href="about.php">About</a>
       <a href="studentprofile.php">Profile</a>
       <a href="php/logout.inc.php">Logout</a>
     </div>
@@ -23,7 +23,7 @@
     <div class="titleblock">
       <img
         id="titleimg"
-        src="/images/themeblock.PNG"
+        src="http://localhost/Event-web-portal-application/images/themeblock.PNG"
         alt="white pattern "
         style="width: 100%"
       />
@@ -34,7 +34,7 @@
     <!-- title end -->
     <div id="container1-about">
       <p class="about-content">
-        <img class="about-img" align="right" src="/images/about.jpg" width="300" height="300" />
+        <img class="about-img" align="right" src="http://localhost/Event-web-portal-application/images/about.jpg" width="300" height="300" />
         Eventima is in to organizing the events on every scale. Through Eventima
         you can view the events and register for the same. We are small but
         perfectly formed team of professionals that draw on our vast experience,
@@ -47,7 +47,7 @@
     </div>
 
     <!-- <div id="image">
-      <img class="about-img" align="right" src="/images/about.jpg" width="300" height="300" />
+      <img class="about-img" align="right" src="http://localhost/Event-web-portal-application/images/about.jpg" width="300" height="300" />
     </div> -->
   </body>
   <footer>

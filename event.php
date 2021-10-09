@@ -13,6 +13,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 </head>
 
 <body>
+<<<<<<< HEAD
   <!-- header start -->
   <div class="header">
     <a class="logoimg" href="#">
@@ -20,8 +21,17 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </a>
     <div class="header-right">
       <a class="active" href="eventlist.php">Home</a>
+=======
+<!-- header start -->
+	  <div class="header">
+		<a class="logoimg" href="#">
+		  <img id="logo" src="http://localhost/Event-web-portal-application/images/logo.png" alt="company logo" />
+		</a>
+		<div class="header-right">
+      <a  href="eventlist.php">Home</a>
+>>>>>>> 30f355cecd208b3fed872eaabfea4cef57827c7a
       <a href="eventcreate.php">Create</a>
-      <a href="event.php">My Event</a>
+      <a class="active" href="event.php">My Event</a>
       <a href="contact.php">Contact</a>
       <a href="about.php">About</a>
       <a href="studentprofile.php">Profile</a>

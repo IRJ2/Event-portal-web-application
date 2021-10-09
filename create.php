@@ -9,7 +9,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 ?>
 <?php
-require_once "php/connect.php";
+require_once "http://localhost/Event-web-portal-application/php/connect.php";
 if(isset($_SESSION['username']))
 {
 if(isset($_POST['btn-signup']))
