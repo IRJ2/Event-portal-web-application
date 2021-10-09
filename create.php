@@ -14,7 +14,7 @@ if(isset($_SESSION['username']))
 {
 if(isset($_POST['btn-signup']))
 {
-if(!empty($_POST['title'])&& !empty($_POST['details']) && !empty($_POST['reg_close_date']) && !empty($_POST['reg_close_time']) && !empty($_POST['start_date']) && !empty($_POST['end_date']) && !empty($_POST['start_time']) && !empty($_POST['end_time']))
+if(!empty($_POST['title'])&& !empty($_POST['details']) && !empty($_POST['reg_close_date']) && !empty($_POST['reg_close_time']) && !empty($_POST['start_date']) && !empty($_POST['end_date']) && !empty($_POST['start_time']) && !empty($_POST['end_time']) && !empty($_POST['reg_link']) )
 {
 $id=$_SESSION["id"];
 $title=$_POST['title'];
@@ -25,7 +25,8 @@ $start_date=$_POST['start_date'];
 $end_date=$_POST['end_date'];
 $start_time=$_POST['start_time'];
 $end_time=$_POST['end_time'];
-$query=" INSERT INTO event(e_title,reg_close_date,reg_close_time,start_date,start_time,end_date,end_time,details,s_id,flag) values('$title','$reg_close_date','$reg_close_time','$start_date','$start_time','$end_date','$end_time','$details','$id',false)"; 
+$reg_link=$_POST['reg_link'];
+$query=" INSERT INTO event(e_title,reg_close_date,reg_close_time,start_date,start_time,end_date,end_time,details,s_id,flag,reg_link) values('$title','$reg_close_date','$reg_close_time','$start_date','$start_time','$end_date','$end_time','$details','$id',false,'$reg_link')"; 
 $run=mysqli_query($link,$query) or die(mysqli_error());
 if($run)
 {

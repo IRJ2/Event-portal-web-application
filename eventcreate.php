@@ -86,6 +86,11 @@
       <td>:</td>
       <td><p><input class="ip-create" type ="time" name="end_time" required/></p></td>
      </tr>
+     <tr>
+      <td><p><label>Registration link</label></td>
+      <td>:</td>
+      <td><p><input class="ip-create" type ="text" name="reg_link" required/></p></td>
+     </tr>
 </table>
       <input id="submit-e" type = "submit"  value="Submit" name='btn-signup' style="height:45px; width:80px"/>
       <input id="reset-e" type = "reset" value="Reset" style="height:45px; width:80px"/>
