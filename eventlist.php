@@ -15,7 +15,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <table class="event-box" style="width: 80%">
       <tr>
         <th rowspan="3">
-          <img class="pin" src="http://localhost/Event-portal-web-application/images/pin.PNG" alt="Blue pin" />
+          <img class="pin" src="http://localhost/Event-web-portal-application/images/pin.PNG" alt="Blue pin" />
         </th>
         <th>
           <p class="ev-title">30 days of google cloud program</p>
@@ -48,7 +48,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <table class="event-box" style="width: 80%">
       <tr>
         <th rowspan="3">
-          <img class="pin" src="http://localhost/Event-portal-web-application/images/pin.PNG" alt="Blue pin" />
+          <img class="pin" src="http://localhost/Event-web-portal-application/images/pin.PNG" alt="Blue pin" />
         </th>
         <th>
           <p class="ev-title">30 days of google cloud program</p>
