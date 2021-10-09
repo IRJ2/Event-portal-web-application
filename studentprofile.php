@@ -35,14 +35,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		  <img id="logo" src="http://localhost/Event-web-portal-application/images/logo.png" alt="company logo" />
 		</a>
 		<div class="header-right">
-		  <a class="active" href="/eventlist.html">Home</a>
-      <a href="/createevent.html">Create</a>
-	<a href="/myevent.html">My Event</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/about.html">About</a>
-      <a href="/studentprofile.html">Profile</a>
-      <a href="loginpage.html">Logout</a>
-		</div>
+      <a class="active" href="eventlist.php">Home</a>
+      <a href="eventcreate.php">Create</a>
+      <a href="event.php">My Event</a>
+      <a href="contact.php">Contact</a>
+      <a href="about.php">About</a>
+      <a href="studentprofile.php">Profile</a>
+      <a href="php/logout.inc.php">Logout</a>
+    </div>
 	  </div>
 	  <!-- header end -->
 	  <!-- title start-->
@@ -70,7 +70,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </p>
         <table class="t">
 	<?php
-		require_once "connect.php";
+		require_once "php/connect.php";
 		$id=$_SESSION["id"];
 		$result = mysqli_query($link,"select * from student,phone where student.s_id=phone.s_id and student.s_id=$id");
 		while($row = mysqli_fetch_array($result))
