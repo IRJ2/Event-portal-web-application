@@ -40,10 +40,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <?php
     require_once "php/connect.php";
     $id = $_SESSION["id"];
-    $result = mysqli_query($link, "select  e_id,e_title from event where s_id=$id");
-    $row = mysqli_num_rows($result);
+    $result1 = mysqli_query($link, "select  e_id,e_title from event where s_id=$id");
+    $row = mysqli_num_rows($result1);
     for ($i = 0; $i < $row; $i++) {
-      while ($row = mysqli_fetch_array($result)) {
+      while ($row = mysqli_fetch_array($result1)) {
     ?>
     <table class="event-box" style="width: 80%">
         <form method="post" action="event2.php">
@@ -61,7 +61,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </table>
     <?php
       }
-      mysqli_free_result($result);
+      mysqli_free_result($result1);
     }
     mysqli_close($link);
     ?>
