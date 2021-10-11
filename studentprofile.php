@@ -72,7 +72,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	<?php
 		require_once "php/connect.php";
 		$id=$_SESSION["id"];
-		$result = mysqli_query($link,"select * from student,phone where student.s_id=phone.s_id and student.s_id=$id");
+		$result = mysqli_query($link,"select * from student where s_id=$id");
 		while($row = mysqli_fetch_array($result))
 		 {
 		  echo "<tr>";
@@ -81,15 +81,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		  echo "<td>" . $row['f_name'] ." ".$row['m_name']." ".$row['l_name']."</td>";
 		  echo "</tr>";
 		  echo "<tr>";
-		  echo "<td><p>Phone</p></td>";
-		  echo "<td><p>:</p></td>";
-		  echo "<td>" . $row['phone_no'] ."</td>";
-		  echo "</tr>";
-		  echo "<tr>";
 		  echo "<td><p>Email</p></td>";
 		  echo "<td><p>:</p></td>";
 		  echo "<td>" . $row['s_email'] ."</td>";
 		  echo "</tr>";
+		  echo "<tr>";
 		  echo "<td><p>Branch</p></td>";
 		  echo "<td><p>:</p></td>";
 		  echo "<td>" . $row['branch'] ."</td>";
