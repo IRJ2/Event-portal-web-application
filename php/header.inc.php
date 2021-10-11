@@ -30,15 +30,6 @@
     <div class="title">
       <p style="font-size: 50px" class="title-text" id="title">Get your event</p>
       <div class="row">
-        <!-- form -->
-        <form action="#" class="search-box">
-          <div class="input-form">
-            <input id="search-event" type="text" placeholder="Event Title or keyword" />
-          </div>
-          <div class="search-form">
-            <a id="find-e" href="#">Find Event</a>
-          </div>
-        </form>
       </div>
     </div>
   </div>
