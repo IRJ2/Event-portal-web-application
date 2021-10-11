@@ -21,13 +21,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <!-- event list start -->
     <table class="event-box" style="width: 80%">
       <tr>
-        <th rowspan="3">
+        <th width=20% rowspan="3">
           <img class="pin" src="http://localhost/Event-web-portal-application/images/pin.PNG" alt="Blue pin" />
         </th>
-        <th>
+        <th width=50%>
           <p class="ev-title"><?php echo $row['e_title']; ?></p>
         </th>
-        <td rowspan="3">
+        <td width=30% rowspan="3">
           <form method="POST" action="eventdetails.php">
           <input class="det-button" type="submit"  value="View Details" name="view" />
             <td><input type="hidden"  value="<?php echo $row['e_id']; ?>" name="event_id" /></td>
