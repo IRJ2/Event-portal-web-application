@@ -120,7 +120,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
           </tr>
 
           <tr>
-            <td><input class="reg-event" type="button" onclick="location.href='<?php echo $row["reg_link"]; ?></p>'" value="Register Now"></td>
+            <td><input class="reg-event" type="button" onclick="location.href='<?php echo $row['reg_link']; ?>'" value="Register Now"></td>
             <!-- <td><input class="reg-event" type="button" value="Register Now"></td> -->
             <td></td>
             <form action="delete.php" method="post">
