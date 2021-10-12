@@ -78,7 +78,7 @@
                 </tr>
           </table>
           <form  action="eventdetails.php" method="post">
-                <input class="reg-event" type="button" onclick="location.href='<?php echo $row["reg_link"]; ?></p>'" value="Register Now">
+                <input class="reg-event" type="button" onclick="location.href='<?php echo $row['reg_link']; ?>'" value="Register Now">
           </form>
         </div>
         <p class="p1">
